@@ -1,0 +1,38 @@
+<% provide(:tit,"Chỉ số cơ thể") %>
+<%= render 'layouts/header' %>
+<div><b>Thông tin</b></div>
+<div>
+    <p>-<b>Chỉ số khối cơ thể</b> - thường được biết đến với chữ viết tắt <b>BMI</b> theo tên tiếng Anh Body Mass Index - được dùng để đánh giá mức độ gầy hay béo của một người. Chỉ số này do nhà bác học người Bỉ Adolphe Quetelet đưa ra năm 1832</p>
+    <p>-Chỉ số này có thể giúp xác định một người bị <b>bệnh béo phì</b> hay bị <b>bệnh suy dinh dưỡng</b> thông qua số liệu về hình dáng, chiều cao và cân nặng cơ thể.</p>
+</div>
+<div>
+    <form>
+    <label>Giới tính :        </label>
+    <input type="radio", name="sex", value="Nam" />
+    <label>Nam</label>
+    <input type="radio", name="sex", value="Nữ" />
+    <label>Nữ</label>
+    <input type="radio", name="sex", value="khong biet" />
+    <label>Không xác định</label>
+    </form>
+    <form>
+        <label style="width:100px">Tuổi</label>
+        <input type="text", name="age", style="width:200px" />
+    </form>
+    <form>
+        <label style="width:100px">Chiều cao</label>
+        <input type="text", name="height", style:"width:200px" />
+        <label>cm</label>
+    </form>
+    <form>
+        <label style="width:100px">Cân nặng</label>
+        <input type="text", name="weight", style="width:200px" />
+        <label>kg</label>
+    </form>
+    <form>
+        <button type="button" class="btn btn-default">Tính toán</button>
+    </form>
+    <form>
+        <button type="button" class="btn btn-default">Thiết lập lại</button>
+    </form>
+</div>
